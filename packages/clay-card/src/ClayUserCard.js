@@ -219,7 +219,7 @@ ClayUserCard.STATE = {
 	 * @memberof ClayUserCard
 	 * @type {?(string|undefined)}
 	 */
-	subtitle: Config.string(),
+	subtitle: Config.object(),
 
 	/**
 	 * Color of the user sticker.

@@ -319,7 +319,7 @@ ClayCardBase.STATE = {
 	 * @type {?(string|undefined)}
 	 * @default undefined
 	 */
-	subtitle: Config.string(),
+	subtitle: Config.object(),
 
 	/**
 	 * Title of the card.
