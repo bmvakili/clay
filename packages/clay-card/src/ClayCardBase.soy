@@ -36,7 +36,7 @@
 	{@param? stickerLabel: string}
 	{@param? stickerShape: string}
 	{@param? stickerStyle: string}
-	{@param? subtitle: string}
+	{@param? subtitle: html|string|[]}
 
 	{let $attributes kind="attributes"}
 		class="card-type-asset
@@ -118,6 +118,12 @@
 	</div>
 {/template}
 
+
+{template .SubtitleHTML autoescape="deprecated-contextual"}
+  <div class="card-subtitle text-truncate">{$subtitle|noAutoescape}</div>
+{/template}
+
+
 /**
  * This renders the information area of the card.
  */
@@ -134,7 +140,7 @@
 	{@param? labels: list<?>}
 	{@param? labelStylesMap: ?}
 	{@param? spritemap: string}
-	{@param? subtitle: string}
+	{@param? subtitle: []}
 
 	<div class="card-body">
 		<div class="card-row">
@@ -150,7 +156,9 @@
 				{/if}
 
 				{if $subtitle}
-					<div class="card-subtitle text-truncate">{$subtitle}</div>
+          {call ClayCardBase.SubtitleHTML data="all"}
+            {param subtitle: $subtitle /}
+          {/call}
 				{/if}
 
 				{if $labels}

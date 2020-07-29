@@ -278,7 +278,7 @@ ClayFileCard.STATE = {
 	 * @memberof ClayFileCard
 	 * @type {?(string|undefined)}
 	 */
-	subtitle: Config.string(),
+	subtitle: Config.object(),
 
 	/**
 	 * Title of the card.

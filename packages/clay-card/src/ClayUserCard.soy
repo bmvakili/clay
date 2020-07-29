@@ -25,7 +25,7 @@
 	{@param? selectable: bool}
 	{@param? selected: bool}
 	{@param? spritemap: string}
-	{@param? subtitle: string}
+	{@param? subtitle: html|string|[]}
 	{@param? userColorClass: string}
 
 	{let $classes kind="text"}
@@ -78,7 +78,7 @@
 	{@param? labels: list<?>}
 	{@param? labelStylesMap: ?}
 	{@param? spritemap: string}
-	{@param? subtitle: string}
+	{@param? subtitle: []}
 
 	<div class="card-body">
 		<div class="card-row">
@@ -94,7 +94,9 @@
 				{/if}
 
 				{if $subtitle}
-					<div class="card-subtitle text-truncate">{$subtitle}</div>
+          {call ClayCardBase.SubtitleHTML data="all"}
+            {param subtitle: $subtitle /}
+          {/call}
 				{/if}
 			</div>
 
