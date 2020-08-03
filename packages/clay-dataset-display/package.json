@@ -1,6 +1,6 @@
 {
   "name": "clay-dataset-display",
-  "version": "2.21.5",
+  "version": "2.21.6",
   "description": "Metal ClayDatasetDisplay component",
   "license": "BSD-3-Clause",
   "repository": "https://github.com/liferay/clay/tree/master/packages/clay-dataset-display",
@@ -28,7 +28,7 @@
     "metal"
   ],
   "dependencies": {
-    "clay-card-grid": "^2.21.5",
+    "clay-card-grid": "^2.21.6",
     "clay-component": "^2.21.4",
     "clay-list": "^2.21.4",
     "clay-management-toolbar": "^2.21.4",
