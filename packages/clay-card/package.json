@@ -56,5 +56,6 @@
   },
   "browserslist": [
     "extends browserslist-config-clay"
-  ]
+  ],
+  "gitHead": "e9332761f890fdebfc35d311a1476099c191715c"
 }

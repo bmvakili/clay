@@ -55,5 +55,6 @@
         "uglifyjs-webpack-plugin": "^1.2.5",
         "webpack": "^3.0.0",
         "webpack-config-clay": "^2.16.2"
-    }
+    },
+    "gitHead": "e9332761f890fdebfc35d311a1476099c191715c"
 }
